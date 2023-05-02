@@ -1,0 +1,12 @@
+server:
+  port: 8188
+knife4j:
+  enable: true
+  basic: # 开启登录认证
+    enable: true
+    username: admin
+    password: 123456
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher # Spring Boot 2.6以上引入的新PathPatternParser，需要进行配置，不然整合起来会报错
